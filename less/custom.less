@@ -1,0 +1,113 @@
+@import "variables.less";
+
+.jumbotron {
+  background-image: url('../images/laptop-xs.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom:0;
+
+
+   p {
+   	
+    font-weight: 300;
+	font-style: italic;}
+
+   @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    background-image: url('../images/laptop-sm.jpg');
+  }
+
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    background-image: url('../images/laptop-md.jpg');
+  }
+
+    @media (min-width: @screen-lg-min)  {
+    background-image: url('../images/laptop-lg.jpg');
+      background-position: center -200px;
+  }
+}
+
+
+.portfolio-projekt{
+  height: 230px;
+}
+.portfolio-projekt .thumbnail {
+    position:relative;
+  }
+
+  .portfolio-projekt_title {
+    display:block;
+    width:auto;
+    padding:0.5em 1em;
+    background-color:rgba(0,0,0,0.3);
+    font-weight: bold;
+
+    position:absolute;
+    top:4px;
+    left:4px;
+
+    color:white;
+  }
+
+.section {
+padding: 1em 0;
+
+ @media (min-width: @screen-sm-min)  {
+     padding: 2em 0;
+  }
+ 
+    @media (min-width: @screen-md-min)  {
+     padding: 4em 0;
+  }
+ 
+}
+
+.raleway {
+  font-family: @font-family-serif;
+}
+
+.section-title {
+  padding-left:0.5em;
+  margin-bottom:1em;
+
+  font-weight: bold;
+  font-size: 3em;
+
+  border-left:0.25em solid @green;
+}
+
+.progress-bar
+{
+
+    &.bar-green {
+    background-color:@green;
+  }
+
+    &.bar-orange {
+    background-color:@orange;
+  }
+
+    &.bar-black {
+    background-color:@black;
+  }
+}
+
+#testimonials {
+
+  background-color: white;
+  border-top:1px solid @green;
+  border-bottom:1px solid @green;
+
+  @media (max-width: @screen-xs-max)  {
+      
+      .media {
+        margin-bottom:2em;
+      }
+  }
+}
+
+#footer {
+  background-color:@black;
+  color:@white;
+  padding:1em;
+}
